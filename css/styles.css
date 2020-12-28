@@ -1,0 +1,104 @@
+body {
+  position: relative;
+  padding: 0 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Custom Styling */
+.modal .email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal i {
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.gallery {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, fit-content);
+  grid-gap: 1rem
+}
+
+.gallery .card {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.gallery .card:hover {
+  background-color: rgb(246, 246, 246);
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.gallery .card .avatar {
+  margin-right: 2.4rem;
+}
+
+/* Tablet Styles */
+@media (min-width: 720px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+    grid-gap: 2rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header input {
+    height: fit-content;
+  }
+}

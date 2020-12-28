@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Awesome Startup Employee Directory</title>
+</head>
+<body>
+  <header>
+    <h1>Awesome Startup Employee Directory</h1>
+    <input type="text" name="search" id="search" placeholder="Enter name or username">
+  </header>
+
+  <main class="grid-container">
+    <!-- Profiles -->
+    <div class="gallery">
+      <div class="card">
+        <img class="avatar" src="">
+        <div class="text-container">
+          <h2 class="name"></h2>
+          <p class="email"></p>
+          <p class="city"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rest of Profiles Inserted Through JS -->
+  </main>
+
+  <!-- Modal Overlay -->
+  <div class="overlay hidden">
+    <div class="modal">
+      <button class="modal-close">X</button>
+      <div class="modal-content">
+        <img class="avatar" src="">
+        <div class="text-container">
+          <h2 class="name"></h2>
+          <p class="email"></p>
+          <p class="city"></p>
+          <hr>
+          <p class="phone"></p>
+          <p class="address"></p>
+          <p class="dob"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/app.js"></script>
+</body>
+</html>
