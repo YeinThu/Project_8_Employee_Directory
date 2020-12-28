@@ -130,7 +130,7 @@ searchInput.addEventListener('keyup', (e) => {
   employees.forEach(employee => {
     let name = employee.querySelector('.name');
     if (name.textContent.toLowerCase().includes(value)) {
-      employee.style.display = 'block';
+      employee.style.display = '';
     }
     else {
       employee.style.display = 'none';
